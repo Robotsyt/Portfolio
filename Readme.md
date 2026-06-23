@@ -37,5 +37,5 @@ Brief summary: I updated this site to reflect my experience in systems administr
 ## License & Credits
 - This site content is owned by Antonio Hancock.
 - Template & original README adapted from the Personal template by BootstrapMade.
-- Small credit: original README content inspired by rajaprerak (see original source).
+- Small credit: original README/Template content inspired by rajaprerak (see original source).
 
