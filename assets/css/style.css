@@ -5,12 +5,23 @@
 * License: https://bootstrapmade.com/license/
 */
 
+:root {
+  --bg: #335c67;
+  --surface: rgba(255, 243, 176, 0.08);
+  --surface-strong: rgba(255, 243, 176, 0.15);
+  --text: #fff;
+  --text-muted: #dee2e6;
+  --accent: #e09f3e;
+  --accent-strong: #540b0e;
+  --highlight: #fff3b0;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: var(--text);
   position: relative;
   background: transparent;
 }
@@ -18,7 +29,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #010e1b;
+  background: var(--bg);
   background-size: cover;
   left: 0;
   right: 0;
@@ -33,11 +44,11 @@ body::before {
 }
 
 a {
-  color: #12d640;
+  color: var(--accent);
 }
 
 a:hover {
-  color: #12d640;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -80,12 +91,12 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: #12d640;
+  color: var(--highlight);
 }
 
 #header h2 span {
-  color: #ffc107;
-  border-bottom: 2px solid #1c7d32;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent-strong);
   padding-bottom: 6px;
 }
 
@@ -114,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #1c7d32;
+  background: var(--accent);
 }
 
 @media (max-width: 992px) {
@@ -170,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #9e7f25;
+  background-color: var(--accent-strong);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -182,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #12d640;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -239,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #1c7d32;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -276,7 +287,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: #09203a;
+  background: var(--bg);
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -377,7 +388,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #1c7d32;
+  color: var(--accent);
 }
 
 .about-me .content ul {
@@ -392,7 +403,7 @@ section .container {
 .about-me .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #1c7d32;
+  color: var(--accent);
 }
 
 .about-me .content p:last-child {
@@ -411,7 +422,7 @@ section .container {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--surface);
 }
 
 .counts .count-box i {
@@ -420,9 +431,9 @@ section .container {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--surface-strong);
   padding: 12px;
-  color: #1c7d32;
+  color: var(--accent);
   border-radius: 50px;
 }
 
@@ -465,14 +476,14 @@ section .container {
 }
 
 .skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--surface-strong);
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #1c7d32;
+  background-color: var(--accent);
 }
 
 /*--------------------------------------------------------------
@@ -482,7 +493,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #09203a;
+  background: var(--bg);
   transition: ease-in-out 0.3s;
 }
 
@@ -503,7 +514,7 @@ section .container {
 }
 
 .interests .icon-box:hover {
-  background: #042b56eb;
+  background: var(--accent-strong);
 }
 
 /*--------------------------------------------------------------
@@ -558,7 +569,7 @@ section .container {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 243, 176, 0.12);
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -580,7 +591,7 @@ section .container {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #1c7d32 !important;
+  background-color: var(--accent) !important;
 }
 
 @media (max-width: 767px) {
@@ -613,7 +624,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #1c7d32;
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
@@ -646,8 +657,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #9e7f25;
-  border: 2px solid #9e7f25;
+  background: var(--accent-strong);
+  border: 2px solid var(--accent-strong);
 }
 
 /*--------------------------------------------------------------
@@ -655,17 +666,18 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #09203a;
+  background: var(--surface-strong);
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
-  margin: 10px
+  margin: 10px;
+  color: var(--text);
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #1c7d32;
+  background: var(--accent);
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -678,6 +690,10 @@ section .container {
 .services .icon-box .icon i {
   color: #fff;
   font-size: 28px;
+}
+
+.services .icon-box h4 {
+  color: var(--text);
 }
 
 .services .icon-box .icon::before {
@@ -710,8 +726,8 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #042e5f;
-  border-color: #1c7d32;
+  background: var(--accent-strong);
+  border-color: var(--accent);
 }
 
 .services .icon-box:hover .icon {
@@ -719,15 +735,15 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #1c7d32;
+  color: var(--accent);
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: var(--highlight);
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: #12d640;
+  color: var(--highlight);
 }
 
 /*--------------------------------------------------------------
@@ -762,7 +778,7 @@ section .container {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #1c7d32;
+  background: var(--accent);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -862,7 +878,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: var(--highlight);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -894,7 +910,7 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: #09203a;
+  background: var(--bg);
 }
 
 .contact .info-box i.bx {
@@ -908,7 +924,7 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #28a745;
+  color: var(--accent);
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
@@ -936,7 +952,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #12d640;
+  color: var(--accent);
 }
 
 .contact .php-email-form {
@@ -954,8 +970,8 @@ section .container {
 
 .contact .php-email-form .error-message {
   display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
+  background: rgba(255, 243, 176, 0.12);
+  border-left: 4px solid var(--accent-strong);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -963,8 +979,8 @@ section .container {
 
 .contact .php-email-form .sent-message {
   display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #1c7d32;
+  background: var(--surface-strong);
+  border-left: 4px solid var(--accent);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -984,8 +1000,8 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #1c7d32;
-  border-top-color: #eee;
+  border: 3px solid var(--accent);
+  border-top-color: #fff;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -1038,7 +1054,7 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1c7d32;
+  background: var(--accent);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1047,7 +1063,7 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #15bb62;
+  background: var(--accent-strong);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1081,7 +1097,7 @@ section .container {
 }
 
 .credits a {
-  color: #1c7d32;
+  color: var(--accent);
   transition: 0.3s;
 }
 
